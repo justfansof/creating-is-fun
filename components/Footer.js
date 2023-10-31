@@ -1,10 +1,15 @@
 import styles from './Footer.module.css'
 
+import Text from '@components/Text'
+
 export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        <img src="/netlify-monogram.svg" alt="Netlify Logo" className={styles.logo} />
+        <Text
+          type="h1"
+          text="poopoopeepee"
+        />
       </footer>
     </>
   )

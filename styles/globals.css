@@ -1,3 +1,8 @@
+/* Tailwind */ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -10,13 +15,20 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  overflow:hidden;
+}
+
 main {
+  height:100vh;
   padding: 2rem 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  max-width: 60ch;
 }
 
 hr {
