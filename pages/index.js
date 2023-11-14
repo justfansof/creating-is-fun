@@ -1,13 +1,14 @@
 import Head from "next/head";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
+import Menu from "@components/Menu";
 
 import Text from '@components/Text';
 
 
 export default function Home() {
   return (
-    <div className="container bg-black">
+    <div className="container">
       <Head>
         <title>Creating is Fun by Adam Elsedoudi</title>
         <link rel="icon" href="/favicon.ico" />
@@ -21,7 +22,9 @@ export default function Home() {
             className=""
           />
         </header>
-        <Footer />
+        <Menu
+          
+        />
       </main>
 
     </div>

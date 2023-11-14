@@ -3,12 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Retro";
+  src:
+    local("Retro"),
+    url("../public/fonts/Retro Gaming.otf") format("opentype"),
+    url("../public/fonts/Retro Gaming.woff") format("woff");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Retro ,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color:#100B0B;
 }
 
 * {
@@ -33,4 +42,38 @@ main {
 
 hr {
   width: 100%;
+}
+
+a.inactive {
+  color: gray !important;
+  pointer-events: none;
+  cursor: default;
+}
+
+/** Internal Page Sections **/
+.sidebar {
+  width:20%;
+  height: 80vh;
+}
+
+.accessory-section {
+  height: 20vh;
+}
+
+.main-section {
+  width: 80%;
+  height: 80vh;
+  background-image: url(/assets/SiteMenu.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  margin:0px auto;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.main-internal {
+  overflow-y:scroll;
+  padding: 36px;
+  height:inherit;
 }

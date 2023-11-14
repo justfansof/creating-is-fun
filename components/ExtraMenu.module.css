@@ -1,0 +1,14 @@
+.menu {
+  background-image: url(/assets/SiteMenu.png);
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  margin:0px auto;
+  text-align:center;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.menu li:hover {
+  list-style-image: url(/assets/FingerCursor.png);
+}

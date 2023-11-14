@@ -7,8 +7,9 @@ export default function Footer() {
     <>
       <footer className={styles.footer}>
         <Text
-          type="h1"
-          text="poopoopeepee"
+          type="p"
+          className="text-white"
+          text="A site by Adam Elsedoudi"
         />
       </footer>
     </>

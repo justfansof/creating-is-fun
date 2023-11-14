@@ -41,7 +41,8 @@ module.exports = {
       base: ['16px', '24px'],
       lg: ['20px', '28px'],
       xl: ['2rem', '2.5rem'],
-      xxl: ['3rem', "3.5rem"]
+      xxl: ['2.5rem', "3rem"],
+      xxxl: ['3rem', "3.5rem"]
     },
     extend: {
       spacing: {
