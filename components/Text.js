@@ -9,7 +9,7 @@ export default function Text(props) {
                     )
                 } else if (props.type === "h2") {
                     return (
-                        <h2 className={"text-xxl font-black md:text-xxl" + " " + (props.className)}>{props.text}</h2>
+                        <h2 className={"text-xl text-white" + " " + (props.className)}>{props.text}</h2>
                     ) 
                 } else if (props.type === "h3") {
                     return (
@@ -17,7 +17,7 @@ export default function Text(props) {
                     ) 
                 } else if (props.type === "h4") {
                     return (
-                        <h4 className={"text-lg font-black text-center" + " " + (props.className)}>{props.text}</h4>
+                        <h4 className={"text-lg text-white text-center" + " " + (props.className)}>{props.text}</h4>
                     ) 
                 } else if (props.type === "h5") {
                     return (

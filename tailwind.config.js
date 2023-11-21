@@ -17,7 +17,7 @@ module.exports = {
     },
     colors: {
       // Main Black & General Site Backgrounds
-      'black': '#100B0B',
+      'black': '#100b0b',
       // Internal Backgrounds 
       'blue-dark': '#161C2A',
       // Font Color &  Border Color
@@ -28,6 +28,9 @@ module.exports = {
       'gold': '#FCA044',
       // Accent Color #2 - Light Blue
       'blue-light': '#1697D6',
+      // Banner Colors - Blue/Black
+      'banner-black': '#0d111c',
+      'banner-gray': '#354251',
       // Divider Line - Purpleish
       'red': '#0D0D1C'
     },

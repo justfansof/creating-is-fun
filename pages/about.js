@@ -25,18 +25,21 @@ export default function Home() {
         </div>
         <div className="main-section">
           <div className="main-internal flex flex-row">
-            <div className="portrait-section flex flex-col justify-center align-center">
+            <div className="portrait-section w-1/5 flex flex-col justify-center align-center">
               {/* Self Portrait */}
               <img src="https://placehold.co/150x150"/>
               {/* Self Portrait Banner */ }
-              <Text 
-                type="h3"
-                text="Adam Elsedoudi"
-              />
+              <div className="name-holder -mt-6">
+                <Banner 
+                  textType="h4"
+                  text="Adam Elsedoudi"
+                  className="text-gold"
+                />
+              </div>
             </div>
-            <div className="informational-section">
+            <div className="informational-section w-4/5">
               <Banner 
-                textType="h1"
+                textType="h2"
                 text="About Me"
               />
             </div>

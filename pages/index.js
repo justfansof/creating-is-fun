@@ -4,6 +4,7 @@ import Footer from "@components/Footer";
 import Menu from "@components/Menu";
 
 import Text from '@components/Text';
+import Banner from '@components/Banner';
 
 
 export default function Home() {
@@ -15,12 +16,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <header className="bg-blue-dark">
-          <Text
-            type="h1"
-            text="Adam Elsedoudi"
-            className=""
-          />
+        <header className="">
+        <Banner 
+          textType="h1"
+          text="Adam Elsedoudi"
+        />
         </header>
         <Menu
           
