@@ -54,7 +54,10 @@ module.exports = {
       },
       borderRadius: {
         '4xl': '2rem',
-      }
+      },
+      dropShadow: {
+        'md': '0px 35px 35px #100b0b'
+      },
     }
   },
   plugins: [],

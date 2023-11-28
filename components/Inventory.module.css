@@ -1,0 +1,15 @@
+.inventoryItem {
+  font-family: Retro-Body ,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.inventoryImage {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.inventoryList:hover{
+  /* list-style-image: url(/assets/FingerCursor.png); */
+  background-image:linear-gradient(90deg, rgba(23,53,78,1) 50%, rgba(12,20,37,1) 100%);
+}

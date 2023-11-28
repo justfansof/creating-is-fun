@@ -1,7 +1,9 @@
-/* Tailwind */ 
+/*** Tailwind ***/ 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/** Font Styling **/
 
 @font-face {
   font-family: "Retro";
@@ -11,6 +13,14 @@
     url("../public/fonts/Retro Gaming.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Retro-Body";
+  src:
+    local("Retro-Body"),
+    url("../public/fonts/Welbut__.otf") format("opentype"),
+    url("../public/fonts/Welbut__.woff") format("woff");
+}
+
 html,
 body {
   padding: 0;
@@ -18,11 +28,32 @@ body {
   font-family: Retro ,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color:#100B0B;
+  color: #FFFFFF;
 }
 
-* {
-  box-sizing: border-box;
+h1,h2,h3,h4,h5,h6 {
+  font-family: Retro ,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+p {
+  font-family: Retro-Body ,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a.inactive {
+  color: gray !important;
+  pointer-events: none;
+  cursor: default;
+}
+
+/** Global Text Shadows **/
+.menu-shadow { text-shadow: 6px 6px 0px #100b0b; }
+.banner-shadow { text-shadow: 4px 4px 0px #100b0b; }
+.inventory-shadow { text-shadow: 6px 6px 0px #100b0b; }
+
+/** Main Page Styling **/
+* { box-sizing: border-box; }
 
 .container {
   width: 100vw;
@@ -40,19 +71,11 @@ main {
   margin: 0 auto;
 }
 
-hr {
-  width: 100%;
-}
-
-a.inactive {
-  color: gray !important;
-  pointer-events: none;
-  cursor: default;
-}
+hr { width: 100%; }
 
 /** Internal Page Sections **/
 .sidebar {
-  width:20%;
+  width:20vw;
   height: 80vh;
 }
 
@@ -61,7 +84,7 @@ a.inactive {
 }
 
 .main-section {
-  width: 80%;
+  width: 80vw;
   height: 80vh;
   background-image: url(/assets/SiteMenu.png);
   background-size:cover;
@@ -73,7 +96,6 @@ a.inactive {
 }
 
 .main-internal {
-  overflow-y:scroll;
   padding: 36px;
   height:inherit;
 }

@@ -11,11 +11,11 @@ export default function Banner(props) {
                     src="/assets/BannerSegmentLeft.png"
                 />
             </div>
-            <div className={styles.bannerMiddle + " banner-middle flex justify-center items-center w-4/5"}>
+            <div className={styles.bannerMiddle + " banner-middle flex justify-center items-center w-full"}>
                 <Text 
                     type={props.textType}
                     text={props.text}
-                    className={props.className}
+                    className={props.className + " tracking-wider banner-shadow"}
                 />
             </div>
             <div className={styles.bannerSide + " banner-right"}>

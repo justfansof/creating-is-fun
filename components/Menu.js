@@ -13,7 +13,7 @@ export default function Menu(props) {
               <li className="my-6">
                 <Text
                   type="a"
-                  className={"text-white text-xxl " + data.status}
+                  className={" text-white text-xxl tracking-wider menu-shadow " + data.status}
                   text={data.text}
                   link={data.link}
                 />
