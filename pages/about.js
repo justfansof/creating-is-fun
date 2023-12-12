@@ -1,3 +1,5 @@
+import {useState} from "react"
+
 import Head from "next/head";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
@@ -12,6 +14,7 @@ import Text from '@components/Text';
 import Modal from "@components/Modal";
 
 export default function Home() {
+
   return (
     <div className="container">
       <Head>
@@ -68,7 +71,6 @@ export default function Home() {
                   text="Inventory"
                 />
                 <Inventory />
-                <Modal></Modal>
               </div>
             </div>
           </div>

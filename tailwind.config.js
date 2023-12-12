@@ -32,7 +32,9 @@ module.exports = {
       'banner-black': '#0d111c',
       'banner-gray': '#354251',
       // Divider Line - Purpleish
-      'red': '#0D0D1C'
+      'purple': '#0D0D1C',
+      // Error / Exit / Cancel
+      'red': "#8A0818"
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

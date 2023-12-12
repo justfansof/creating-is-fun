@@ -43,8 +43,7 @@ p {
 
 a.inactive {
   color: gray !important;
-  pointer-events: none;
-  cursor: default;
+  cursor: not-allowed;
 }
 
 /** Global Text Shadows **/
